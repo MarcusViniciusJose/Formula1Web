@@ -85,11 +85,7 @@ $(document).ready(function () {
     }
     function createForm() {
         var html = '';
-        //html = html + '<div class="form-group">';
-        //html = html + '<label class="control-label" for="piloto_id">Código</label>';
-        //html = html + '<input type="text" name="piloto_id" class="form-control" data-error="Por favor entre com o codpiloto" required />';
-        //html = html + '<div class="help-block with-errors"></div>';
-        //html = html + '</div>';
+        
         html = html + '<div class="form-group">';
         html = html + '<label class="control-label" for="nome">Nome</label>';
         html = html + '<input type="text" name="nome" class="form-control" data-error="Por favor entre com o nome" required />';
@@ -123,11 +119,11 @@ $(document).ready(function () {
     function createEditForm() {
 
         var html = '<input type="hidden" name="cod" class="edit-id">';
-        //html = html + '<div class="form-group">';
-        //html = html + '<label class="control-label" for="piloto_id">Código</label>';
-        //html = html + '<input type="text" name="piloto_id" class="form-control" data-error="Por favor entre com o codpiloto" required />';
-        //html = html + '<div class="help-block with-errors"></div>';
-        //html = html + '</div>';
+        html = html + '<div class="form-group">';
+        html = html + '<label class="control-label" for="piloto_id">Código</label>';
+        html = html + '<input type="text" name="piloto_id" class="form-control" data-error="Por favor entre com o codpiloto" required />';
+        html = html + '<div class="help-block with-errors"></div>';
+        html = html + '</div>';
         html = html + '<div class="form-group">';
         html = html + '<label class="control-label" for="nome">Nome</label>';
         html = html + '<input type="text" name="nome" class="form-control" data-error="Por favor entre com o nome" required />';

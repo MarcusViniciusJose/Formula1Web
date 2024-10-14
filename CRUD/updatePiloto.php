@@ -5,7 +5,7 @@
 
     header('Content-type: application/json');
 
-    $sql = "UPDATE piloto SET nome = '" . $_POST['nome'] . "', pontuacao = '" . $_POST['pontuacao'] . "', equipe = '" . $_POST['equipe'] . "', vitorias = '" . $_POST['vitorias'] . "', podiums = '" . $_POST['podiums'] . "', usuario_id = '" . $_SESSION['user']->codigo . "' WHERE piloto_id = " . $_POST['piloto_id'];
+    $sql = "UPDATE piloto SET nome = '" . $_POST['nome'] . "', pontuacao = '" . $_POST['pontuacao'] . "', equipe = '" . $_POST['equipe'] . "', vitorias = '" . $_POST['vitorias'] . "', podiums = '" . $_POST['podiums'] . "', usuario_id = '" . $_SESSION['user']->codigo . "' WHERE piloto_id = " . $_POST['piloto_id']. "";
 
     if($conn->query($sql)===true){
         $msg = "Dados atualizados com sucesso";
