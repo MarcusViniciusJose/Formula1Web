@@ -27,18 +27,17 @@ session_start();
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         h2 {
+            margin-top: 0px;
             margin-bottom: 20px;
+            font-size: 35px;
+            text-align: center;
         }
         input[type="text"], input[type="password"] {
-            width: 100%;
+            width: 95%;
             padding: 10px;
             margin: 10px 0;
             border: 1px solid #ccc;
             border-radius: 3px;
-        }
-        h2 {
-            margin-bottom: 20px;
-            text-align: center;
         }
         button {
             width: 100%;
@@ -61,7 +60,7 @@ session_start();
 </head>
 <body>
     <div class="login-container">
-        <h2>Faça seu Acesso</h2>
+        <h2>Login</h2>
         <form action="./CLASSES/verifica.php" method="POST">
             <input type="text" name="usuario" placeholder="Usuário" required>
             <input type="password" name="senha" placeholder="Senha" required>
